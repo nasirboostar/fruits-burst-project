@@ -3,11 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="./images/fav-icon.ico" type="image/x-icon">
+<script src="https://kit.fontawesome.com/2a971a071b.js" crossorigin="anonymous"></script>
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.tailwindcss.com"></script>
+     
     <title>FruitsBurst</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    backgroundImage: {
+                        'bg-team': "url(./images/team.png)",
+                    },
+
+                    colors: {
+                        'color-primary': '#F85559',
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .font-lato {
+            font-family: 'Lato';
+        }
+        .font-Lobster{
+           font-family: 'Lobster';
+        }
+    </style>
 </head>
 <body>
-    
+    <header class="mx-auto max-w-8xl" >
+        <!-- nav-section -->
+        <section class="lg:my-14">
+        <div class="navbar lg:bg-color-primary lg:px-5 h-[120px] rounded-full">
+                
+         <div class="navbar-start hidden lg:block">
+         <ul class="menu menu-horizontal px-1 text-lg text-[#fff] font-Lobster font-medium">
+         <li><a>Home</a></li>
+         <li><a>About Us</a></li>
+         <li><a>Shop</a></li>
+         <li><a>All Fruits</a></li>
+          </ul>
+          </div>
+               
+         <div class="navbar-center lg:flex gap-3">
+         <img class="w-[50px]" src="./images/logo.png" alt="">
+         <h3 class="text-4xl lg:text-[#fff] font-Lobster font-bold">Fruit Burst</h3>
+         </div>
+                
+         <div class="navbar-end lg:pr-5 cursor-pointer ">
+             <div class="border-2 bg-white rounded-full lg:px-7 hidden lg:block ">
+          <input class="text-base text-[#12121266] border-0 outline-none p-3 font-lato rounded-full  "
+         type="text" placeholder="Search here"> <i class="fa-solid fa-magnifying-glass"></i>
+             </div>
+          </div>
+                
+     <div class="dropdown">
+      <label tabindex="0" class="btn btn-ghost lg:hidden">
+     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+         stroke="currentColor">
+         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h8m-8 6h16" />
+         </svg>
+         </label>
+     <ul tabindex="0"
+     class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box text-xs">
+         <li><a>Home</a></li>
+         <li><a>About Us</a></li>
+         <li><a>Shop</a></li>
+         <li><a>All Fruits</a></li>
+         </ul>
+         </div>
+     </div>
+        </section>
+    </header>
+    <main></main>
+    <footer></footer>
 </body>
 </html>
